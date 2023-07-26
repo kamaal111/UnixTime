@@ -18,18 +18,30 @@
 		2CD84DB02A7181750000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
 		2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */; };
 		2CD84DB42A7188560000121D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB32A7188560000121D /* ClockView.swift */; };
+		2CD84DBD2A718A320000121D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB32A7188560000121D /* ClockView.swift */; };
+		2CD84DBE2A718A320000121D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B272A717CC8001568DA /* ContentView.swift */; };
+		2CD84DBF2A718A320000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
+		2CD84DC02A718A320000121D /* UnixTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B252A717CC8001568DA /* UnixTimeApp.swift */; };
+		2CD84DC22A718A320000121D /* KamaalBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB62A718A320000121D /* KamaalBrowser */; };
+		2CD84DC32A718A320000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB82A718A320000121D /* KamaalExtensions */; };
+		2CD84DC42A718A320000121D /* KamaalLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB92A718A320000121D /* KamaalLogger */; };
+		2CD84DC52A718A320000121D /* KamaalNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DBA2A718A320000121D /* KamaalNavigation */; };
+		2CD84DC72A718A320000121D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */; };
+		2CD84DC82A718A320000121D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C534B222A717CC8001568DA /* UnixTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C534B222A717CC8001568DA /* UnixTime (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UnixTime (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C534B252A717CC8001568DA /* UnixTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeApp.swift; sourceTree = "<group>"; };
 		2C534B272A717CC8001568DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C534B292A717CC9001568DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C534B2B2A717CC9001568DA /* UnixTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTime.entitlements; sourceTree = "<group>"; };
+		2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeIOS.entitlements; sourceTree = "<group>"; };
 		2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		2CD84DCC2A718A320000121D /* UnixTime (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UnixTime (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD84DCD2A718AC40000121D /* UnixTimeMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeMacOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,17 @@
 				2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */,
 				2CD84DAA2A7180C80000121D /* KamaalLogger in Frameworks */,
 				2CD84DAC2A7180C80000121D /* KamaalNavigation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD84DC12A718A320000121D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD84DC22A718A320000121D /* KamaalBrowser in Frameworks */,
+				2CD84DC32A718A320000121D /* KamaalExtensions in Frameworks */,
+				2CD84DC42A718A320000121D /* KamaalLogger in Frameworks */,
+				2CD84DC52A718A320000121D /* KamaalNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +81,8 @@
 		2C534B232A717CC8001568DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C534B222A717CC8001568DA /* UnixTime.app */,
+				2C534B222A717CC8001568DA /* UnixTime (macOS).app */,
+				2CD84DCC2A718A320000121D /* UnixTime (iOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +90,8 @@
 		2C534B242A717CC8001568DA /* UnixTime */ = {
 			isa = PBXGroup;
 			children = (
-				2C534B2B2A717CC9001568DA /* UnixTime.entitlements */,
+				2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */,
+				2CD84DCD2A718AC40000121D /* UnixTimeMacOS.entitlements */,
 				2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */,
 				2CD84DAF2A7181750000121D /* ClockManager.swift */,
 				2CD84DB32A7188560000121D /* ClockView.swift */,
@@ -89,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C534B212A717CC8001568DA /* UnixTime */ = {
+		2C534B212A717CC8001568DA /* UnixTime (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C534B312A717CC9001568DA /* Build configuration list for PBXNativeTarget "UnixTime" */;
+			buildConfigurationList = 2C534B312A717CC9001568DA /* Build configuration list for PBXNativeTarget "UnixTime (macOS)" */;
 			buildPhases = (
 				2C534B1E2A717CC8001568DA /* Sources */,
 				2C534B1F2A717CC8001568DA /* Frameworks */,
@@ -101,7 +126,7 @@
 			);
 			dependencies = (
 			);
-			name = UnixTime;
+			name = "UnixTime (macOS)";
 			packageProductDependencies = (
 				2CD84DA52A7180C80000121D /* KamaalBrowser */,
 				2CD84DA72A7180C80000121D /* KamaalExtensions */,
@@ -109,7 +134,30 @@
 				2CD84DAB2A7180C80000121D /* KamaalNavigation */,
 			);
 			productName = UnixTime;
-			productReference = 2C534B222A717CC8001568DA /* UnixTime.app */;
+			productReference = 2C534B222A717CC8001568DA /* UnixTime (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CD84DB52A718A320000121D /* UnixTime (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD84DC92A718A320000121D /* Build configuration list for PBXNativeTarget "UnixTime (iOS)" */;
+			buildPhases = (
+				2CD84DBB2A718A320000121D /* Sources */,
+				2CD84DC12A718A320000121D /* Frameworks */,
+				2CD84DC62A718A320000121D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UnixTime (iOS)";
+			packageProductDependencies = (
+				2CD84DB62A718A320000121D /* KamaalBrowser */,
+				2CD84DB82A718A320000121D /* KamaalExtensions */,
+				2CD84DB92A718A320000121D /* KamaalLogger */,
+				2CD84DBA2A718A320000121D /* KamaalNavigation */,
+			);
+			productName = UnixTime;
+			productReference = 2CD84DCC2A718A320000121D /* UnixTime (iOS).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C534B212A717CC8001568DA /* UnixTime */,
+				2C534B212A717CC8001568DA /* UnixTime (macOS) */,
+				2CD84DB52A718A320000121D /* UnixTime (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +204,15 @@
 			files = (
 				2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */,
 				2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD84DC62A718A320000121D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD84DC72A718A320000121D /* Preview Assets.xcassets in Resources */,
+				2CD84DC82A718A320000121D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +228,17 @@
 				2C534B282A717CC8001568DA /* ContentView.swift in Sources */,
 				2CD84DB02A7181750000121D /* ClockManager.swift in Sources */,
 				2C534B262A717CC8001568DA /* UnixTimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD84DBB2A718A320000121D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD84DBD2A718A320000121D /* ClockView.swift in Sources */,
+				2CD84DBE2A718A320000121D /* ContentView.swift in Sources */,
+				2CD84DBF2A718A320000121D /* ClockManager.swift in Sources */,
+				2CD84DC02A718A320000121D /* UnixTimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
@@ -303,6 +372,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -321,10 +391,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -333,7 +403,47 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2CD84DCA2A718A320000121D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
@@ -360,7 +470,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CD84DCB2A718A320000121D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C534B312A717CC9001568DA /* Build configuration list for PBXNativeTarget "UnixTime" */ = {
+		2C534B312A717CC9001568DA /* Build configuration list for PBXNativeTarget "UnixTime (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C534B322A717CC9001568DA /* Debug */,
@@ -388,10 +539,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2CD84DC92A718A320000121D /* Build configuration list for PBXNativeTarget "UnixTime (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD84DCA2A718A320000121D /* Debug */,
+				2CD84DCB2A718A320000121D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kamaalio/KamaalSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kamaalio/KamaalSwift.git";
 			requirement = {
@@ -420,6 +588,26 @@
 		2CD84DAB2A7180C80000121D /* KamaalNavigation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalNavigation;
+		};
+		2CD84DB62A718A320000121D /* KamaalBrowser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalBrowser;
+		};
+		2CD84DB82A718A320000121D /* KamaalExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalExtensions;
+		};
+		2CD84DB92A718A320000121D /* KamaalLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalLogger;
+		};
+		2CD84DBA2A718A320000121D /* KamaalNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
 			productName = KamaalNavigation;
 		};
 /* End XCSwiftPackageProductDependency section */

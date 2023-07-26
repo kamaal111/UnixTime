@@ -5,7 +5,6 @@
 //  Created by Kamaal M Farah on 26/07/2023.
 //
 
-#if os(macOS)
 import SwiftUI
 import Combine
 
@@ -18,8 +17,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.button!.title = clockManager.formattedTime
-        statusItem.button!.action = #selector(togglePopover)
+        assert(statusItem.button != nil)
+        statusItem.button?.title = clockManager.formattedTime
+        statusItem.button?.action = #selector(togglePopover)
 
         popover = NSPopover()
         popover.contentSize = NSSize(width: popoverSize.width, height: popoverSize.height)
@@ -30,7 +30,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
             .sink(receiveValue: { [weak self] _ in
                 guard let self else { return }
 
-                self.statusItem.button!.title = self.clockManager.formattedTime
+                assert(self.statusItem.button != nil)
+                self.statusItem.button?.title = self.clockManager.formattedTime
             })
             .store(in: &timeChangeSubscription)
     }
@@ -50,4 +51,3 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         }
     }
 }
-#endif
