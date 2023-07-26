@@ -5,45 +5,45 @@
 //  Created by Kamaal M Farah on 26/07/2023.
 //
 
-import Cocoa
+import SwiftUI
 import Combine
 
-final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    private var statusItem: NSStatusItem!
     private let clockManager = ClockManager()
-    private let popoverSize = CGSize(width: 150, height: 150)
     private var timeChangeSubscription = Set<AnyCancellable>()
-
-    lazy var statusItem: NSStatusItem = {
-        let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        assert(statusItem.button != nil)
-        statusItem.button?.title = clockManager.formattedTime
-        return statusItem
-    }()
-
-    lazy var menu: NSMenu = {
-        let menu = NSMenu()
-        menu.addItem(withTitle: "Quit", action: #selector(quitApp), keyEquivalent: "q")
-        return menu
-    }()
+    private let popoverSize = CGSize(width: 150, height: 150)
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        statusItem.menu = menu
-        setSubscriptions()
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        assert(statusItem.button != nil)
+        assert(statusItem.isVisible)
+        statusItem.button?.image = NSImage(
+            systemSymbolName: "deskclock.fill",
+            accessibilityDescription: "Desk clock logo")
+        statusItem.button?.action = #selector(togglePopover)
     }
 
-    private func setSubscriptions() {
-        clockManager.$time
-            .sink(receiveValue: { [weak self] _ in
-                guard let self else { return }
+    private lazy var popover: NSPopover = {
+        let popover = NSPopover()
+        popover.contentSize = NSSize(width: popoverSize.width, height: popoverSize.height)
+        popover.behavior = .transient
+        popover.contentViewController = NSHostingController(rootView: view())
+        return popover
+    }()
 
-                assert(self.statusItem.button != nil)
-                self.statusItem.button?.title = self.clockManager.formattedTime
-            })
-            .store(in: &timeChangeSubscription)
+    private func view() -> some View {
+        MenuPopoverClock()
+            .frame(width: popoverSize.width, height: popoverSize.height)
+            .environmentObject(clockManager)
     }
 
     @objc
-    private func quitApp() {
-        NSApplication.shared.terminate(self)
+    private func togglePopover(_ button: NSStatusBarButton) {
+        if popover.isShown {
+            popover.performClose(nil)
+        } else {
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+        }
     }
 }

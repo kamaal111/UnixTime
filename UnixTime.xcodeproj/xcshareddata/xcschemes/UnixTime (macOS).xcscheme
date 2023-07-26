@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C534B212A717CC8001568DA"
-               BuildableName = "UnixTime (macOS).app"
+               BuildableName = "UnixTime.app"
                BlueprintName = "UnixTime (macOS)"
                ReferencedContainer = "container:UnixTime.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C534B212A717CC8001568DA"
-            BuildableName = "UnixTime (macOS).app"
+            BuildableName = "UnixTime.app"
             BlueprintName = "UnixTime (macOS)"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C534B212A717CC8001568DA"
-            BuildableName = "UnixTime (macOS).app"
+            BuildableName = "UnixTime.app"
             BlueprintName = "UnixTime (macOS)"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>

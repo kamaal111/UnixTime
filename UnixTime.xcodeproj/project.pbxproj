@@ -11,6 +11,7 @@
 		2C534B282A717CC8001568DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B272A717CC8001568DA /* ContentView.swift */; };
 		2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 		2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */; };
+		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
 		2CD84DA62A7180C80000121D /* KamaalBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA52A7180C80000121D /* KamaalBrowser */; };
 		2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA72A7180C80000121D /* KamaalExtensions */; };
 		2CD84DAA2A7180C80000121D /* KamaalLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA92A7180C80000121D /* KamaalLogger */; };
@@ -37,6 +38,7 @@
 		2C534B292A717CC9001568DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeIOS.entitlements; sourceTree = "<group>"; };
 		2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD84DB32A7188560000121D /* ClockView.swift */,
+				2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				2C534B282A717CC8001568DA /* ContentView.swift in Sources */,
 				2CD84DB02A7181750000121D /* ClockManager.swift in Sources */,
 				2C534B262A717CC8001568DA /* UnixTimeApp.swift in Sources */,
+				2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
