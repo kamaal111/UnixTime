@@ -12,40 +12,45 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
     private let clockManager = ClockManager()
     private var timeChangeSubscription = Set<AnyCancellable>()
-    private let popoverSize = CGSize(width: 150, height: 120)
+    private let mainMenuItemSize = CGSize(width: 150, height: 78)
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         statusItem.button!.image = NSImage(
             systemSymbolName: "deskclock.fill",
             accessibilityDescription: "Desk clock logo")
-        statusItem.button!.action = #selector(togglePopover)
+        statusItem.menu = menu
 
         NSApplication.shared.windows
             .filter({ window in window != statusItem.button!.window })
             .forEach({ window in window.close() })
     }
 
-    private lazy var popover: NSPopover = {
-        let popover = NSPopover()
-        popover.contentSize = NSSize(width: popoverSize.width, height: popoverSize.height)
-        popover.behavior = .transient
-        popover.contentViewController = NSHostingController(rootView: view())
-        return popover
+    private lazy var menu: NSMenu = {
+        let menu = NSMenu()
+        menu.addItem(mainMenuItem)
+        menu.addItem(.separator())
+        menu.addItem(
+            withTitle: NSLocalizedString("Quit UnixTime", comment: ""),
+            action: #selector(quitApp),
+            keyEquivalent: "Q")
+        return menu
+    }()
+
+    lazy var mainMenuItem: NSMenuItem = {
+        let item = NSMenuItem()
+        item.view = NSHostingView(rootView: view())
+            .setFrame(NSRect(x: 0, y: 0, width: mainMenuItemSize.width, height: mainMenuItemSize.height))
+        return item
     }()
 
     private func view() -> some View {
         MenuPopoverClock()
-            .frame(width: popoverSize.width, height: popoverSize.height)
             .environmentObject(clockManager)
     }
 
     @objc
-    private func togglePopover(_ button: NSStatusBarButton) {
-        if popover.isShown {
-            popover.performClose(nil)
-        } else {
-            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
-        }
+    private func quitApp(_ item: NSMenuItem) {
+        NSApplication.shared.terminate(self)
     }
 }
