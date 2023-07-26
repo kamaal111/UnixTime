@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var clockManager = ClockManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(clockManager.formattedTime)
         }
         .padding()
     }
