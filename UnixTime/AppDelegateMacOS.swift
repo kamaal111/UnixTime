@@ -22,6 +22,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             systemSymbolName: "deskclock.fill",
             accessibilityDescription: "Desk clock logo")
         statusItem.button?.action = #selector(togglePopover)
+
+        NSApplication.shared.windows
+            .filter({ window in window != statusItem.button?.window })
+            .forEach({ window in window.close() })
     }
 
     private lazy var popover: NSPopover = {
