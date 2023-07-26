@@ -12,7 +12,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
     private let clockManager = ClockManager()
     private var timeChangeSubscription = Set<AnyCancellable>()
-    private let mainMenuItemSize = CGSize(width: 150, height: 78)
+    private let mainMenuItemSize = CGSize(width: 150, height: 82)
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)

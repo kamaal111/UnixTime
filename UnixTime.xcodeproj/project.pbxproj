@@ -40,6 +40,7 @@
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
+		2C76A3D42A71A95800A0C331 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 2C534B192A717CC8001568DA;
 			packageReferences = (
@@ -291,6 +293,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C76A3CA2A719F6700A0C331 /* en */,
+				2C76A3D42A71A95800A0C331 /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -362,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
