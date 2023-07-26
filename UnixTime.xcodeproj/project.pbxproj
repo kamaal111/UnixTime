@@ -16,6 +16,8 @@
 		2CD84DAA2A7180C80000121D /* KamaalLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA92A7180C80000121D /* KamaalLogger */; };
 		2CD84DAC2A7180C80000121D /* KamaalNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DAB2A7180C80000121D /* KamaalNavigation */; };
 		2CD84DB02A7181750000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
+		2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */; };
+		2CD84DB42A7188560000121D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB32A7188560000121D /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2C534B2B2A717CC9001568DA /* UnixTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTime.entitlements; sourceTree = "<group>"; };
 		2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
+		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
+		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				2C534B2B2A717CC9001568DA /* UnixTime.entitlements */,
+				2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */,
 				2CD84DAF2A7181750000121D /* ClockManager.swift */,
+				2CD84DB32A7188560000121D /* ClockView.swift */,
 				2C534B272A717CC8001568DA /* ContentView.swift */,
 				2C534B252A717CC8001568DA /* UnixTimeApp.swift */,
 				2C534B292A717CC9001568DA /* Assets.xcassets */,
@@ -159,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */,
+				2CD84DB42A7188560000121D /* ClockView.swift in Sources */,
 				2C534B282A717CC8001568DA /* ContentView.swift in Sources */,
 				2CD84DB02A7181750000121D /* ClockManager.swift in Sources */,
 				2C534B262A717CC8001568DA /* UnixTimeApp.swift in Sources */,

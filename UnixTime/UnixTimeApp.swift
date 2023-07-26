@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct UnixTimeApp: App {
+    #if os(macOS)
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    #endif
+
+    @StateObject private var clockManager = ClockManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(clockManager)
         }
     }
 }

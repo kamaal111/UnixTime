@@ -9,7 +9,7 @@ import Foundation
 import KamaalExtensions
 
 final class ClockManager: ObservableObject {
-    @Published private var time: TimeInterval
+    @Published private(set) var time: TimeInterval
 
     init() {
         self.time = Date().timeIntervalSince1970

@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var clockManager = ClockManager()
-
     var body: some View {
-        VStack {
-            Text(clockManager.formattedTime)
-        }
-        .padding()
+        ClockView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ClockManager())
     }
 }
