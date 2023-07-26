@@ -12,19 +12,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
     private let clockManager = ClockManager()
     private var timeChangeSubscription = Set<AnyCancellable>()
-    private let popoverSize = CGSize(width: 150, height: 150)
+    private let popoverSize = CGSize(width: 150, height: 120)
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        assert(statusItem.button != nil)
-        assert(statusItem.isVisible)
-        statusItem.button?.image = NSImage(
+        statusItem.button!.image = NSImage(
             systemSymbolName: "deskclock.fill",
             accessibilityDescription: "Desk clock logo")
-        statusItem.button?.action = #selector(togglePopover)
+        statusItem.button!.action = #selector(togglePopover)
 
         NSApplication.shared.windows
-            .filter({ window in window != statusItem.button?.window })
+            .filter({ window in window != statusItem.button!.window })
             .forEach({ window in window.close() })
     }
 

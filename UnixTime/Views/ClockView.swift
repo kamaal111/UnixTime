@@ -11,7 +11,12 @@ struct ClockView: View {
     @EnvironmentObject private var clockManager: ClockManager
 
     var body: some View {
-        Text(clockManager.formattedTime)
+        VStack(alignment: .leading) {
+            Text("Epoch timestamp")
+                .font(.headline)
+            Text(clockManager.formattedTime)
+                .padding(.vertical, 8)
+        }
     }
 }
 

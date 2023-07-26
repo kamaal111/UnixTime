@@ -12,10 +12,11 @@
 		2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 		2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */; };
 		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
-		2CD84DA62A7180C80000121D /* KamaalBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA52A7180C80000121D /* KamaalBrowser */; };
+		2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
+		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
+		2C76A3CE2A71A00600A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CD2A71A00600A0C331 /* KamaalUI */; };
+		2C76A3D02A71A01500A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CF2A71A01500A0C331 /* KamaalUI */; };
 		2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA72A7180C80000121D /* KamaalExtensions */; };
-		2CD84DAA2A7180C80000121D /* KamaalLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA92A7180C80000121D /* KamaalLogger */; };
-		2CD84DAC2A7180C80000121D /* KamaalNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DAB2A7180C80000121D /* KamaalNavigation */; };
 		2CD84DB02A7181750000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
 		2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */; };
 		2CD84DB42A7188560000121D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB32A7188560000121D /* ClockView.swift */; };
@@ -23,10 +24,7 @@
 		2CD84DBE2A718A320000121D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B272A717CC8001568DA /* ContentView.swift */; };
 		2CD84DBF2A718A320000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
 		2CD84DC02A718A320000121D /* UnixTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B252A717CC8001568DA /* UnixTimeApp.swift */; };
-		2CD84DC22A718A320000121D /* KamaalBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB62A718A320000121D /* KamaalBrowser */; };
 		2CD84DC32A718A320000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB82A718A320000121D /* KamaalExtensions */; };
-		2CD84DC42A718A320000121D /* KamaalLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DB92A718A320000121D /* KamaalLogger */; };
-		2CD84DC52A718A320000121D /* KamaalNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DBA2A718A320000121D /* KamaalNavigation */; };
 		2CD84DC72A718A320000121D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */; };
 		2CD84DC82A718A320000121D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -39,6 +37,7 @@
 		2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeIOS.entitlements; sourceTree = "<group>"; };
 		2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
+		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -51,10 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD84DA62A7180C80000121D /* KamaalBrowser in Frameworks */,
 				2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */,
-				2CD84DAA2A7180C80000121D /* KamaalLogger in Frameworks */,
-				2CD84DAC2A7180C80000121D /* KamaalNavigation in Frameworks */,
+				2C76A3CE2A71A00600A0C331 /* KamaalUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD84DC22A718A320000121D /* KamaalBrowser in Frameworks */,
 				2CD84DC32A718A320000121D /* KamaalExtensions in Frameworks */,
-				2CD84DC42A718A320000121D /* KamaalLogger in Frameworks */,
-				2CD84DC52A718A320000121D /* KamaalNavigation in Frameworks */,
+				2C76A3D02A71A01500A0C331 /* KamaalUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +72,7 @@
 			children = (
 				2C534B242A717CC8001568DA /* UnixTime */,
 				2C534B232A717CC8001568DA /* Products */,
+				2C76A3CC2A71A00600A0C331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +90,7 @@
 			children = (
 				2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */,
 				2CD84DCD2A718AC40000121D /* UnixTimeMacOS.entitlements */,
+				2C76A3CB2A719F6700A0C331 /* Localizable.strings */,
 				2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */,
 				2C534B272A717CC8001568DA /* ContentView.swift */,
 				2C534B252A717CC8001568DA /* UnixTimeApp.swift */,
@@ -111,6 +108,13 @@
 				2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2CD84DCE2A718C040000121D /* Views */ = {
@@ -155,10 +159,8 @@
 			);
 			name = "UnixTime (macOS)";
 			packageProductDependencies = (
-				2CD84DA52A7180C80000121D /* KamaalBrowser */,
 				2CD84DA72A7180C80000121D /* KamaalExtensions */,
-				2CD84DA92A7180C80000121D /* KamaalLogger */,
-				2CD84DAB2A7180C80000121D /* KamaalNavigation */,
+				2C76A3CD2A71A00600A0C331 /* KamaalUI */,
 			);
 			productName = UnixTime;
 			productReference = 2C534B222A717CC8001568DA /* UnixTime.app */;
@@ -178,10 +180,8 @@
 			);
 			name = "UnixTime (iOS)";
 			packageProductDependencies = (
-				2CD84DB62A718A320000121D /* KamaalBrowser */,
 				2CD84DB82A718A320000121D /* KamaalExtensions */,
-				2CD84DB92A718A320000121D /* KamaalLogger */,
-				2CD84DBA2A718A320000121D /* KamaalNavigation */,
+				2C76A3CF2A71A01500A0C331 /* KamaalUI */,
 			);
 			productName = UnixTime;
 			productReference = 2CD84DCC2A718A320000121D /* UnixTime.app */;
@@ -230,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */,
+				2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */,
 				2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD84DC72A718A320000121D /* Preview Assets.xcassets in Resources */,
+				2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */,
 				2CD84DC82A718A320000121D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +273,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C76A3CB2A719F6700A0C331 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C76A3CA2A719F6700A0C331 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2C534B2F2A717CC9001568DA /* Debug */ = {
@@ -598,45 +611,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2CD84DA52A7180C80000121D /* KamaalBrowser */ = {
+		2C76A3CD2A71A00600A0C331 /* KamaalUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalBrowser;
+			productName = KamaalUI;
+		};
+		2C76A3CF2A71A01500A0C331 /* KamaalUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalUI;
 		};
 		2CD84DA72A7180C80000121D /* KamaalExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
 			productName = KamaalExtensions;
 		};
-		2CD84DA92A7180C80000121D /* KamaalLogger */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalLogger;
-		};
-		2CD84DAB2A7180C80000121D /* KamaalNavigation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalNavigation;
-		};
-		2CD84DB62A718A320000121D /* KamaalBrowser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalBrowser;
-		};
 		2CD84DB82A718A320000121D /* KamaalExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
 			productName = KamaalExtensions;
-		};
-		2CD84DB92A718A320000121D /* KamaalLogger */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalLogger;
-		};
-		2CD84DBA2A718A320000121D /* KamaalNavigation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
-			productName = KamaalNavigation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
