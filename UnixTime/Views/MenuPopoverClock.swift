@@ -17,7 +17,3 @@ struct MenuPopoverClock: View {
         .padding(.horizontal, 14)
     }
 }
-
-#Preview {
-    MenuPopoverClock()
-}

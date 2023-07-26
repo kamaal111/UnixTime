@@ -11,6 +11,17 @@
 		2C534B282A717CC8001568DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534B272A717CC8001568DA /* ContentView.swift */; };
 		2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 		2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */; };
+		2C6E8B432A71AD080098505A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B422A71AD080098505A /* WidgetKit.framework */; };
+		2C6E8B452A71AD080098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
+		2C6E8B482A71AD080098505A /* UnixTimeWidgetIOSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */; };
+		2C6E8B4A2A71AD080098505A /* UnixTimeWidgetIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */; };
+		2C6E8B4C2A71AD080098505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B4B2A71AD080098505A /* Assets.xcassets */; };
+		2C6E8B502A71AD080098505A /* UnixTimeWidgetIOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B422A71AD080098505A /* WidgetKit.framework */; };
+		2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
+		2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */; };
+		2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5F2A71AD200098505A /* Assets.xcassets */; };
+		2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
 		2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
@@ -30,6 +41,48 @@
 		2CD84DC82A718A320000121D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2C6E8B4E2A71AD080098505A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C534B1A2A717CC8001568DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6E8B402A71AD080098505A;
+			remoteInfo = UnixTimeWidgetIOSExtension;
+		};
+		2C6E8B632A71AD200098505A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C534B1A2A717CC8001568DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6E8B582A71AD200098505A;
+			remoteInfo = UnixTimeWidgetMacOSExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C6E8B512A71AD080098505A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C6E8B502A71AD080098505A /* UnixTimeWidgetIOSExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6E8B692A71AD200098505A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C534B222A717CC8001568DA /* UnixTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C534B252A717CC8001568DA /* UnixTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeApp.swift; sourceTree = "<group>"; };
@@ -37,6 +90,18 @@
 		2C534B292A717CC9001568DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeIOS.entitlements; sourceTree = "<group>"; };
 		2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnixTimeWidgetIOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6E8B422A71AD080098505A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2C6E8B442A71AD080098505A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetIOSBundle.swift; sourceTree = "<group>"; };
+		2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetIOS.swift; sourceTree = "<group>"; };
+		2C6E8B4B2A71AD080098505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C6E8B4D2A71AD080098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnixTimeWidgetMacOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetMacOS.swift; sourceTree = "<group>"; };
+		2C6E8B5F2A71AD200098505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C6E8B612A71AD200098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeWidgetMacOS.entitlements; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
@@ -58,6 +123,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C6E8B3E2A71AD080098505A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B452A71AD080098505A /* SwiftUI.framework in Frameworks */,
+				2C6E8B432A71AD080098505A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6E8B562A71AD200098505A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */,
+				2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CD84DC12A718A320000121D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,9 +156,11 @@
 		2C534B192A717CC8001568DA = {
 			isa = PBXGroup;
 			children = (
-				2C534B242A717CC8001568DA /* UnixTime */,
-				2C534B232A717CC8001568DA /* Products */,
 				2C76A3CC2A71A00600A0C331 /* Frameworks */,
+				2C534B232A717CC8001568DA /* Products */,
+				2C534B242A717CC8001568DA /* UnixTime */,
+				2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */,
+				2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +169,8 @@
 			children = (
 				2C534B222A717CC8001568DA /* UnixTime.app */,
 				2CD84DCC2A718A320000121D /* UnixTime.app */,
+				2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */,
+				2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +201,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E8B4D2A71AD080098505A /* Info.plist */,
+				2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */,
+				2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */,
+				2C6E8B4B2A71AD080098505A /* Assets.xcassets */,
+			);
+			path = UnixTimeWidgetIOS;
+			sourceTree = "<group>";
+		};
+		2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */,
+				2C6E8B612A71AD200098505A /* Info.plist */,
+				2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */,
+				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
+			);
+			path = UnixTimeWidgetMacOS;
+			sourceTree = "<group>";
+		};
 		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E8B422A71AD080098505A /* WidgetKit.framework */,
+				2C6E8B442A71AD080098505A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,10 +275,12 @@
 				2C534B1E2A717CC8001568DA /* Sources */,
 				2C534B1F2A717CC8001568DA /* Frameworks */,
 				2C534B202A717CC8001568DA /* Resources */,
+				2C6E8B692A71AD200098505A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C6E8B642A71AD200098505A /* PBXTargetDependency */,
 			);
 			name = "UnixTime (macOS)";
 			packageProductDependencies = (
@@ -178,6 +291,40 @@
 			productReference = 2C534B222A717CC8001568DA /* UnixTime.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6E8B542A71AD080098505A /* Build configuration list for PBXNativeTarget "UnixTimeWidgetIOSExtension" */;
+			buildPhases = (
+				2C6E8B3D2A71AD080098505A /* Sources */,
+				2C6E8B3E2A71AD080098505A /* Frameworks */,
+				2C6E8B3F2A71AD080098505A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnixTimeWidgetIOSExtension;
+			productName = UnixTimeWidgetIOSExtension;
+			productReference = 2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6E8B662A71AD200098505A /* Build configuration list for PBXNativeTarget "UnixTimeWidgetMacOSExtension" */;
+			buildPhases = (
+				2C6E8B552A71AD200098505A /* Sources */,
+				2C6E8B562A71AD200098505A /* Frameworks */,
+				2C6E8B572A71AD200098505A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnixTimeWidgetMacOSExtension;
+			productName = UnixTimeWidgetMacOSExtension;
+			productReference = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2CD84DB52A718A320000121D /* UnixTime (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD84DC92A718A320000121D /* Build configuration list for PBXNativeTarget "UnixTime (iOS)" */;
@@ -185,10 +332,12 @@
 				2CD84DBB2A718A320000121D /* Sources */,
 				2CD84DC12A718A320000121D /* Frameworks */,
 				2CD84DC62A718A320000121D /* Resources */,
+				2C6E8B512A71AD080098505A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C6E8B4F2A71AD080098505A /* PBXTargetDependency */,
 			);
 			name = "UnixTime (iOS)";
 			packageProductDependencies = (
@@ -212,6 +361,12 @@
 					2C534B212A717CC8001568DA = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					2C6E8B402A71AD080098505A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2C6E8B582A71AD200098505A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 2C534B1D2A717CC8001568DA /* Build configuration list for PBXProject "UnixTime" */;
@@ -233,6 +388,8 @@
 			targets = (
 				2C534B212A717CC8001568DA /* UnixTime (macOS) */,
 				2CD84DB52A718A320000121D /* UnixTime (iOS) */,
+				2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */,
+				2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +402,22 @@
 				2C534B2E2A717CC9001568DA /* Preview Assets.xcassets in Resources */,
 				2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */,
 				2C534B2A2A717CC9001568DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6E8B3F2A71AD080098505A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B4C2A71AD080098505A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6E8B572A71AD200098505A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +448,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C6E8B3D2A71AD080098505A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B4A2A71AD080098505A /* UnixTimeWidgetIOS.swift in Sources */,
+				2C6E8B482A71AD080098505A /* UnixTimeWidgetIOSBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6E8B552A71AD200098505A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CD84DBB2A718A320000121D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +477,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6E8B4F2A71AD080098505A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */;
+			targetProxy = 2C6E8B4E2A71AD080098505A /* PBXContainerItemProxy */;
+		};
+		2C6E8B642A71AD200098505A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */;
+			targetProxy = 2C6E8B632A71AD200098505A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2C76A3CB2A719F6700A0C331 /* Localizable.strings */ = {
@@ -419,6 +622,7 @@
 		2C534B322A717CC9001568DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
@@ -459,6 +663,7 @@
 		2C534B332A717CC9001568DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
@@ -496,9 +701,129 @@
 			};
 			name = Release;
 		};
+		2C6E8B522A71AD080098505A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C6E8B532A71AD080098505A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C6E8B672A71AD200098505A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C6E8B682A71AD200098505A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		2CD84DCA2A718A320000121D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
@@ -539,6 +864,7 @@
 		2CD84DCB2A718A320000121D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
@@ -593,6 +919,24 @@
 			buildConfigurations = (
 				2C534B322A717CC9001568DA /* Debug */,
 				2C534B332A717CC9001568DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6E8B542A71AD080098505A /* Build configuration list for PBXNativeTarget "UnixTimeWidgetIOSExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6E8B522A71AD080098505A /* Debug */,
+				2C6E8B532A71AD080098505A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6E8B662A71AD200098505A /* Build configuration list for PBXNativeTarget "UnixTimeWidgetMacOSExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6E8B672A71AD200098505A /* Debug */,
+				2C6E8B682A71AD200098505A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
