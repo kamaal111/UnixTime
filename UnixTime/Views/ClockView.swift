@@ -15,7 +15,9 @@ struct ClockView: View {
     }
 }
 
-#Preview {
-    ClockView()
-        .environmentObject(ClockManager())
+struct ClockView_Previews: PreviewProvider {
+    static var previews: some View {
+        ClockView()
+            .environmentObject(ClockManager())
+    }
 }

@@ -93,12 +93,12 @@
 				2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */,
 				2CD84DCD2A718AC40000121D /* UnixTimeMacOS.entitlements */,
 				2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */,
-				2CD84DAF2A7181750000121D /* ClockManager.swift */,
-				2CD84DB32A7188560000121D /* ClockView.swift */,
 				2C534B272A717CC8001568DA /* ContentView.swift */,
 				2C534B252A717CC8001568DA /* UnixTimeApp.swift */,
 				2C534B292A717CC9001568DA /* Assets.xcassets */,
+				2CD84DD02A718C1B0000121D /* Models */,
 				2C534B2C2A717CC9001568DA /* Preview Content */,
+				2CD84DCE2A718C040000121D /* Views */,
 			);
 			path = UnixTime;
 			sourceTree = "<group>";
@@ -109,6 +109,30 @@
 				2C534B2D2A717CC9001568DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CD84DCE2A718C040000121D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CD84DB32A7188560000121D /* ClockView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CD84DD02A718C1B0000121D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CD84DD12A718C1F0000121D /* Managers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CD84DD12A718C1F0000121D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD84DAF2A7181750000121D /* ClockManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
