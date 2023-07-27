@@ -53,6 +53,7 @@
 		2C76A3D32A71A8B100A0C331 /* NSView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */; };
 		2CB5A22E2A72B40D008653D0 /* KamaalUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB5A22D2A72B40D008653D0 /* KamaalUtils */; };
 		2CB5A2302A72B602008653D0 /* Shell+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */; };
+		2CB5A2332A72BE01008653D0 /* VCR_OSD_MONO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB5A2322A72BE01008653D0 /* VCR_OSD_MONO.ttf */; };
 		2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2CC7EFA22A7265A8008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA72A7180C80000121D /* KamaalExtensions */; };
@@ -150,6 +151,8 @@
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
 		2C76A3D42A71A95800A0C331 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+extensions.swift"; sourceTree = "<group>"; };
+		2CB5A2322A72BE01008653D0 /* VCR_OSD_MONO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VCR_OSD_MONO.ttf; sourceTree = "<group>"; };
+		2CB5A2342A72BE1E008653D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7455D02A72767C00FDBE50 /* Playground.entitlements */,
+				2CB5A2342A72BE1E008653D0 /* Info.plist */,
 				2C7455D82A7279F700FDBE50 /* AppLogo.swift */,
 				2C7455C92A72767A00FDBE50 /* ContentView.swift */,
 				2C7455C72A72767A00FDBE50 /* PlaygroundApp.swift */,
@@ -356,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7455EC2A728D4C00FDBE50 /* app-icon-generator */,
+				2CB5A2312A72BDCF008653D0 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -391,6 +396,14 @@
 				2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CB5A2312A72BDCF008653D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5A2322A72BE01008653D0 /* VCR_OSD_MONO.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2CC7EFA02A7264FA008D1496 /* Widgets */ = {
@@ -620,6 +633,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB5A2332A72BE01008653D0 /* VCR_OSD_MONO.ttf in Resources */,
 				2C7455CF2A72767C00FDBE50 /* Preview Assets.xcassets in Resources */,
 				2C7455ED2A728D4C00FDBE50 /* app-icon-generator in Resources */,
 				2C7455CC2A72767C00FDBE50 /* Assets.xcassets in Resources */,
@@ -852,7 +866,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMacOS;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -893,7 +907,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMacOS;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1066,6 +1080,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Playground/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1100,6 +1115,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Playground/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1120,7 +1136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconIOS;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1161,7 +1177,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconIOS;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;

@@ -11,7 +11,7 @@ import KamaalUtils
 
 let PLAYGROUND_SELECTABLE_COLORS: [Color] = [
     .black,
-    .white
+    .accentColor
 ]
 
 struct AppLogoCreatorScreen: View {
@@ -82,6 +82,8 @@ struct AppLogoCreatorScreen: View {
             AppLogoColorSelector(color: $viewModel.backgroundColor, title: "Background color")
                 .disabled(viewModel.disabledBackgroundColorButtons)
                 .padding(.bottom, 16)
+            AppLogoColorSelector(color: $viewModel.primaryColor, title: "Primary color")
+                .padding(.bottom, 16)
             AppLogoColorFormRow(title: "Has curves") {
                 Toggle(viewModel.hasCurves ? "Yup" : "Nope", isOn: $viewModel.hasCurves)
             }
@@ -100,6 +102,7 @@ private final class ViewModel: ObservableObject {
     @Published var hasABackground = true
     @Published var hasCurves = true
     @Published var backgroundColor = PLAYGROUND_SELECTABLE_COLORS[0]
+    @Published var primaryColor = PLAYGROUND_SELECTABLE_COLORS[1]
     @Published var exportLogoSize = "400" {
         didSet {
             let filteredExportLogoSize = exportLogoSize.filter(\.isNumber)
@@ -150,6 +153,7 @@ private final class ViewModel: ObservableObject {
         AppLogo(
             size: size,
             backgroundColor: hasABackground ? backgroundColor : .white.opacity(0),
+            primaryColor: primaryColor,
             curvedCornersSize: cornerRadius)
     }
 
