@@ -9,3 +9,5 @@
 "Epoch timestamp" = "Epoch timestamp";
 "Quit UnixTime" = "Quit UnixTime";
 "Last updated: %@" = "Last updated: %@";
+"Unix Time" = "Unix Time";
+"Displays the current unix time." = "Displays the current unix time.";

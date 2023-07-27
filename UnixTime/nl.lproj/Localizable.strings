@@ -9,3 +9,5 @@
 "Epoch timestamp" = "Epoche tijdstempel";
 "Quit UnixTime" = "Sluit UnixTime af";
 "Last updated: %@" = "Laatst bijgewerkt: %@";
+"Unix Time" = "Unix Time";
+"Displays the current unix time." = "Geeft de huidige Unix-tijd weer.";

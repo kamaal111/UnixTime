@@ -15,13 +15,21 @@
 		2C6E8B452A71AD080098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
 		2C6E8B482A71AD080098505A /* UnixTimeWidgetIOSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */; };
 		2C6E8B4A2A71AD080098505A /* UnixTimeWidgetIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */; };
-		2C6E8B4C2A71AD080098505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B4B2A71AD080098505A /* Assets.xcassets */; };
 		2C6E8B502A71AD080098505A /* UnixTimeWidgetIOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B422A71AD080098505A /* WidgetKit.framework */; };
 		2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
 		2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */; };
 		2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5F2A71AD200098505A /* Assets.xcassets */; };
 		2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C7455B32A726ECD00FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5F2A71AD200098505A /* Assets.xcassets */; };
+		2C7455B52A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
+		2C7455B62A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
+		2C7455B82A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */; };
+		2C7455B92A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */; };
+		2C7455BB2A7270A400FDBE50 /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C7455BA2A7270A400FDBE50 /* KamaalExtensions */; };
+		2C7455BD2A7270A900FDBE50 /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C7455BC2A7270A900FDBE50 /* KamaalExtensions */; };
+		2C7455BF2A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */; };
+		2C7455C02A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */; };
 		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
 		2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
@@ -97,13 +105,15 @@
 		2C6E8B442A71AD080098505A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetIOSBundle.swift; sourceTree = "<group>"; };
 		2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetIOS.swift; sourceTree = "<group>"; };
-		2C6E8B4B2A71AD080098505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6E8B4D2A71AD080098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnixTimeWidgetMacOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetMacOS.swift; sourceTree = "<group>"; };
 		2C6E8B5F2A71AD200098505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6E8B612A71AD200098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeWidgetMacOS.entitlements; sourceTree = "<group>"; };
+		2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetEntryView.swift; sourceTree = "<group>"; };
+		2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeEntry.swift; sourceTree = "<group>"; };
+		2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeProvider.swift; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
@@ -129,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7455BD2A7270A900FDBE50 /* KamaalExtensions in Frameworks */,
 				2C6E8B452A71AD080098505A /* SwiftUI.framework in Frameworks */,
 				2C6E8B432A71AD080098505A /* WidgetKit.framework in Frameworks */,
 			);
@@ -138,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7455BB2A7270A400FDBE50 /* KamaalExtensions in Frameworks */,
 				2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */,
 				2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */,
 			);
@@ -208,7 +220,6 @@
 				2C6E8B4D2A71AD080098505A /* Info.plist */,
 				2C6E8B492A71AD080098505A /* UnixTimeWidgetIOS.swift */,
 				2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */,
-				2C6E8B4B2A71AD080098505A /* Assets.xcassets */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -219,7 +230,6 @@
 				2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */,
 				2C6E8B612A71AD200098505A /* Info.plist */,
 				2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */,
-				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -229,8 +239,20 @@
 			children = (
 				2C6E8B462A71AD080098505A /* iOS */,
 				2C6E8B5C2A71AD200098505A /* macOS */,
+				2C7455B22A726EAA00FDBE50 /* Shared */,
 			);
 			path = UnixTime;
+			sourceTree = "<group>";
+		};
+		2C7455B22A726EAA00FDBE50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */,
+				2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */,
+				2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */,
+				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
@@ -323,6 +345,7 @@
 			);
 			name = UnixTimeWidgetIOSExtension;
 			packageProductDependencies = (
+				2C7455BC2A7270A900FDBE50 /* KamaalExtensions */,
 			);
 			productName = UnixTimeWidgetIOSExtension;
 			productReference = 2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */;
@@ -342,6 +365,7 @@
 			);
 			name = UnixTimeWidgetMacOSExtension;
 			packageProductDependencies = (
+				2C7455BA2A7270A400FDBE50 /* KamaalExtensions */,
 			);
 			productName = UnixTimeWidgetMacOSExtension;
 			productReference = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */;
@@ -431,7 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6E8B4C2A71AD080098505A /* Assets.xcassets in Resources */,
+				2C7455B32A726ECD00FDBE50 /* Assets.xcassets in Resources */,
 				2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,8 +500,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7455C02A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */,
 				2C6E8B4A2A71AD080098505A /* UnixTimeWidgetIOS.swift in Sources */,
+				2C7455B62A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */,
 				2C6E8B482A71AD080098505A /* UnixTimeWidgetIOSBundle.swift in Sources */,
+				2C7455B92A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7455B82A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */,
+				2C7455B52A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */,
 				2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */,
+				2C7455BF2A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,6 +1026,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2C7455BA2A7270A400FDBE50 /* KamaalExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalExtensions;
+		};
+		2C7455BC2A7270A900FDBE50 /* KamaalExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalExtensions;
+		};
 		2C76A3CD2A71A00600A0C331 /* KamaalUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
