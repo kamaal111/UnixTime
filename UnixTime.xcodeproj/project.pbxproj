@@ -112,6 +112,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C2646692A72C6E5008C3EAB /* InfoMacOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoMacOS.plist; sourceTree = "<group>"; };
+		2C26466B2A72C783008C3EAB /* InfoIOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoIOS.plist; sourceTree = "<group>"; };
 		2C534B222A717CC8001568DA /* EpochStamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpochStamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C534B252A717CC8001568DA /* UnixTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeApp.swift; sourceTree = "<group>"; };
 		2C534B272A717CC8001568DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -240,6 +242,8 @@
 			children = (
 				2C534B2B2A717CC9001568DA /* UnixTimeIOS.entitlements */,
 				2CD84DCD2A718AC40000121D /* UnixTimeMacOS.entitlements */,
+				2C26466B2A72C783008C3EAB /* InfoIOS.plist */,
+				2C2646692A72C6E5008C3EAB /* InfoMacOS.plist */,
 				2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */,
 				2C534B272A717CC8001568DA /* ContentView.swift */,
 				2C534B252A717CC8001568DA /* UnixTimeApp.swift */,
@@ -879,6 +883,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTime/InfoMacOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EpochStamp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -922,6 +927,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTime/InfoMacOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EpochStamp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -1157,6 +1163,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTime/InfoIOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EpochStamp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1200,6 +1207,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnixTime/InfoIOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EpochStamp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
