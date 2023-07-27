@@ -33,7 +33,9 @@ struct UnixTimeWidgetEntryView: View {
     }
 }
 
-#Preview {
-    UnixTimeWidgetEntryView(entry: UnixTimeEntry(date: Date()))
-        .previewContext(WidgetPreviewContext(family: .systemSmall))
+struct UnixTimeWidgetEntryView_Previews: PreviewProvider {
+    static var previews: some View {
+        UnixTimeWidgetEntryView(entry: UnixTimeEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
+    }
 }
