@@ -5,8 +5,8 @@
 //  Created by Kamaal M Farah on 26/07/2023.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -19,16 +19,13 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
-        }
-
+        let entries = (0 ..< 4)
+            .map({
+                let minuteOffset = $0 * 15
+                let entryDate = Calendar.current.date(byAdding: .minute, value: minuteOffset, to: currentDate)!
+                return SimpleEntry(date: entryDate)
+            })
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -42,9 +39,23 @@ struct UnixTimeWidgetIOSEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        ZStack {
-            Text(entry.date, style: .timer)
+        VStack(alignment: .leading) {
+            Text("Epoch timestamp")
+                .font(.headline)
+            Text(String(Int(Date().timeIntervalSince1970)))
+                .padding(.top, 2)
+            Spacer()
+            Text("Last updated: \(formattedLastUpdatedDate)")
+                .foregroundColor(.secondary)
+                .font(.subheadline)
         }
+    }
+
+    private var formattedLastUpdatedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter.string(from: entry.date)
     }
 }
 

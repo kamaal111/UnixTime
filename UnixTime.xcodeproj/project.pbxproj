@@ -202,7 +202,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */ = {
+		2C6E8B462A71AD080098505A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				2C6E8B4D2A71AD080098505A /* Info.plist */,
@@ -210,7 +210,7 @@
 				2C6E8B472A71AD080098505A /* UnixTimeWidgetIOSBundle.swift */,
 				2C6E8B4B2A71AD080098505A /* Assets.xcassets */,
 			);
-			path = UnixTimeWidgetIOS;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */ = {
@@ -222,6 +222,14 @@
 				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
 			);
 			path = UnixTimeWidgetMacOS;
+			sourceTree = "<group>";
+		};
+		2C7455B12A726C5B00FDBE50 /* UnixTime */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E8B462A71AD080098505A /* iOS */,
+			);
+			path = UnixTime;
 			sourceTree = "<group>";
 		};
 		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
@@ -244,7 +252,7 @@
 		2CC7EFA02A7264FA008D1496 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */,
+				2C7455B12A726C5B00FDBE50 /* UnixTime */,
 				2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */,
 			);
 			path = Widgets;
@@ -314,6 +322,8 @@
 			dependencies = (
 			);
 			name = UnixTimeWidgetIOSExtension;
+			packageProductDependencies = (
+			);
 			productName = UnixTimeWidgetIOSExtension;
 			productReference = 2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -331,6 +341,8 @@
 			dependencies = (
 			);
 			name = UnixTimeWidgetMacOSExtension;
+			packageProductDependencies = (
+			);
 			productName = UnixTimeWidgetMacOSExtension;
 			productReference = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -722,10 +734,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTime/iOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -751,10 +763,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTime/iOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -791,7 +803,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetMacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -821,7 +833,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.UnixTime.UnixTimeWidgetMacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
