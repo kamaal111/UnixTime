@@ -32,7 +32,7 @@ struct UnixTimeProvider: TimelineProvider {
     }
 
     static let widgetKind = "UnixTimeWidget"
-    static let configurationDisplayName = NSLocalizedString("Unix Time", comment: "")
+    static let configurationDisplayName = NSLocalizedString("Epoch Time", comment: "")
     static let configurationDescription = NSLocalizedString("Display the current unix time.", comment: "")
     static let supportedWidgetFamilies: [WidgetFamily] = [.systemSmall]
 }
