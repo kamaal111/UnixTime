@@ -213,7 +213,7 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */ = {
+		2C6E8B5C2A71AD200098505A /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */,
@@ -221,13 +221,14 @@
 				2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */,
 				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
 			);
-			path = UnixTimeWidgetMacOS;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		2C7455B12A726C5B00FDBE50 /* UnixTime */ = {
 			isa = PBXGroup;
 			children = (
 				2C6E8B462A71AD080098505A /* iOS */,
+				2C6E8B5C2A71AD200098505A /* macOS */,
 			);
 			path = UnixTime;
 			sourceTree = "<group>";
@@ -253,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				2C7455B12A726C5B00FDBE50 /* UnixTime */,
-				2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -789,13 +789,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTime/macOS/UnixTimeWidgetMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTime/macOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -819,13 +819,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTime/macOS/UnixTimeWidgetMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTime/macOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
