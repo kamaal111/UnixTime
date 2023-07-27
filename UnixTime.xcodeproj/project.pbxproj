@@ -19,9 +19,7 @@
 		2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B422A71AD080098505A /* WidgetKit.framework */; };
 		2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
 		2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */; };
-		2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5F2A71AD200098505A /* Assets.xcassets */; };
 		2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2C7455B32A726ECD00FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5F2A71AD200098505A /* Assets.xcassets */; };
 		2C7455B52A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
 		2C7455B62A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
 		2C7455B82A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */; };
@@ -30,6 +28,12 @@
 		2C7455BD2A7270A900FDBE50 /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C7455BC2A7270A900FDBE50 /* KamaalExtensions */; };
 		2C7455BF2A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */; };
 		2C7455C02A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */; };
+		2C7455C82A72767A00FDBE50 /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455C72A72767A00FDBE50 /* PlaygroundApp.swift */; };
+		2C7455CA2A72767A00FDBE50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455C92A72767A00FDBE50 /* ContentView.swift */; };
+		2C7455CC2A72767C00FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7455CB2A72767C00FDBE50 /* Assets.xcassets */; };
+		2C7455CF2A72767C00FDBE50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */; };
+		2C7455D42A7276C800FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
+		2C7455D52A7276C900FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
 		2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
@@ -108,12 +112,17 @@
 		2C6E8B4D2A71AD080098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnixTimeWidgetMacOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetMacOS.swift; sourceTree = "<group>"; };
-		2C6E8B5F2A71AD200098505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6E8B612A71AD200098505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6E8B622A71AD200098505A /* UnixTimeWidgetMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnixTimeWidgetMacOS.entitlements; sourceTree = "<group>"; };
 		2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeWidgetEntryView.swift; sourceTree = "<group>"; };
 		2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeEntry.swift; sourceTree = "<group>"; };
 		2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixTimeProvider.swift; sourceTree = "<group>"; };
+		2C7455C52A72767900FDBE50 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7455C72A72767A00FDBE50 /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
+		2C7455C92A72767A00FDBE50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C7455CB2A72767C00FDBE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C7455D02A72767C00FDBE50 /* Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Playground.entitlements; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
@@ -155,6 +164,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C7455C22A72767900FDBE50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CD84DC12A718A320000121D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2C76A3CC2A71A00600A0C331 /* Frameworks */,
+				2C7455C62A72767A00FDBE50 /* Playground */,
 				2C534B232A717CC8001568DA /* Products */,
 				2C534B242A717CC8001568DA /* UnixTime */,
 				2CC7EFA02A7264FA008D1496 /* Widgets */,
@@ -184,6 +201,7 @@
 				2CD84DCC2A718A320000121D /* UnixTime.app */,
 				2C6E8B412A71AD080098505A /* UnixTimeWidgetIOSExtension.appex */,
 				2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */,
+				2C7455C52A72767900FDBE50 /* Playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,9 +268,28 @@
 				2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */,
 				2C7455BE2A7270E900FDBE50 /* UnixTimeProvider.swift */,
 				2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */,
-				2C6E8B5F2A71AD200098505A /* Assets.xcassets */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2C7455C62A72767A00FDBE50 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455D02A72767C00FDBE50 /* Playground.entitlements */,
+				2C7455C92A72767A00FDBE50 /* ContentView.swift */,
+				2C7455C72A72767A00FDBE50 /* PlaygroundApp.swift */,
+				2C7455CB2A72767C00FDBE50 /* Assets.xcassets */,
+				2C7455CD2A72767C00FDBE50 /* Preview Content */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		2C7455CD2A72767C00FDBE50 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
@@ -371,6 +408,23 @@
 			productReference = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		2C7455C42A72767900FDBE50 /* Playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C7455D12A72767C00FDBE50 /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildPhases = (
+				2C7455C12A72767900FDBE50 /* Sources */,
+				2C7455C22A72767900FDBE50 /* Frameworks */,
+				2C7455C32A72767900FDBE50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Playground;
+			productName = Playground;
+			productReference = 2C7455C52A72767900FDBE50 /* Playground.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2CD84DB52A718A320000121D /* UnixTime (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD84DC92A718A320000121D /* Build configuration list for PBXNativeTarget "UnixTime (iOS)" */;
@@ -401,7 +455,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2C534B212A717CC8001568DA = {
@@ -412,6 +466,9 @@
 					};
 					2C6E8B582A71AD200098505A = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					2C7455C42A72767900FDBE50 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -436,6 +493,7 @@
 				2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */,
 				2CD84DB52A718A320000121D /* UnixTime (iOS) */,
 				2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */,
+				2C7455C42A72767900FDBE50 /* Playground */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C7455B32A726ECD00FDBE50 /* Assets.xcassets in Resources */,
+				2C7455D52A7276C900FDBE50 /* Assets.xcassets in Resources */,
 				2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,8 +522,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */,
+				2C7455D42A7276C800FDBE50 /* Assets.xcassets in Resources */,
 				2CC7EFA22A7265A8008D1496 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7455C32A72767900FDBE50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7455CF2A72767C00FDBE50 /* Preview Assets.xcassets in Resources */,
+				2C7455CC2A72767C00FDBE50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +583,15 @@
 				2C7455B52A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */,
 				2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */,
 				2C7455BF2A7270E900FDBE50 /* UnixTimeProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7455C12A72767900FDBE50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7455CA2A72767A00FDBE50 /* ContentView.swift in Sources */,
+				2C7455C82A72767A00FDBE50 /* PlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +950,73 @@
 			};
 			name = Release;
 		};
+		2C7455D22A72767C00FDBE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.Playground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C7455D32A72767C00FDBE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kamaal.Playground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		2CD84DCA2A718A320000121D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -991,6 +1134,15 @@
 			buildConfigurations = (
 				2C6E8B672A71AD200098505A /* Debug */,
 				2C6E8B682A71AD200098505A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C7455D12A72767C00FDBE50 /* Build configuration list for PBXNativeTarget "Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7455D22A72767C00FDBE50 /* Debug */,
+				2C7455D32A72767C00FDBE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
