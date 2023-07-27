@@ -34,12 +34,25 @@
 		2C7455CF2A72767C00FDBE50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */; };
 		2C7455D42A7276C800FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
 		2C7455D52A7276C900FDBE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C534B292A717CC9001568DA /* Assets.xcassets */; };
+		2C7455D92A7279F700FDBE50 /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455D82A7279F700FDBE50 /* AppLogo.swift */; };
+		2C7455DB2A727A5F00FDBE50 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C7455DA2A727A5F00FDBE50 /* KamaalUI */; };
+		2C7455DD2A727AB800FDBE50 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455DC2A727AB800FDBE50 /* Screens.swift */; };
+		2C7455E12A727AE800FDBE50 /* AppLogoCreatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455E02A727AE800FDBE50 /* AppLogoCreatorScreen.swift */; };
+		2C7455E42A727B0B00FDBE50 /* PlaygroundNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455E32A727B0B00FDBE50 /* PlaygroundNavigationButton.swift */; };
+		2C7455E62A727B3900FDBE50 /* WideNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455E52A727B3900FDBE50 /* WideNavigationLink.swift */; };
+		2C7455E82A728B9100FDBE50 /* AppLogoColorFormRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455E72A728B9100FDBE50 /* AppLogoColorFormRow.swift */; };
+		2C7455EA2A728BA800FDBE50 /* AppLogoColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455E92A728BA800FDBE50 /* AppLogoColorSelector.swift */; };
+		2C7455ED2A728D4C00FDBE50 /* app-icon-generator in Resources */ = {isa = PBXBuildFile; fileRef = 2C7455EC2A728D4C00FDBE50 /* app-icon-generator */; };
+		2C7455F02A728D8400FDBE50 /* FileManager+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455EF2A728D8400FDBE50 /* FileManager+extensions.swift */; };
+		2C7455F22A728D9B00FDBE50 /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C7455F12A728D9B00FDBE50 /* KamaalExtensions */; };
 		2C76A3C42A7199C400A0C331 /* MenuPopoverClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */; };
 		2C76A3C82A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3CE2A71A00600A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CD2A71A00600A0C331 /* KamaalUI */; };
 		2C76A3D02A71A01500A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CF2A71A01500A0C331 /* KamaalUI */; };
 		2C76A3D32A71A8B100A0C331 /* NSView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */; };
+		2CB5A22E2A72B40D008653D0 /* KamaalUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB5A22D2A72B40D008653D0 /* KamaalUtils */; };
+		2CB5A2302A72B602008653D0 /* Shell+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */; };
 		2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2CC7EFA22A7265A8008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA72A7180C80000121D /* KamaalExtensions */; };
@@ -123,10 +136,20 @@
 		2C7455CB2A72767C00FDBE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C7455D02A72767C00FDBE50 /* Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Playground.entitlements; sourceTree = "<group>"; };
+		2C7455D82A7279F700FDBE50 /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		2C7455DC2A727AB800FDBE50 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		2C7455E02A727AE800FDBE50 /* AppLogoCreatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoCreatorScreen.swift; sourceTree = "<group>"; };
+		2C7455E32A727B0B00FDBE50 /* PlaygroundNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundNavigationButton.swift; sourceTree = "<group>"; };
+		2C7455E52A727B3900FDBE50 /* WideNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideNavigationLink.swift; sourceTree = "<group>"; };
+		2C7455E72A728B9100FDBE50 /* AppLogoColorFormRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoColorFormRow.swift; sourceTree = "<group>"; };
+		2C7455E92A728BA800FDBE50 /* AppLogoColorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoColorSelector.swift; sourceTree = "<group>"; };
+		2C7455EC2A728D4C00FDBE50 /* app-icon-generator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "app-icon-generator"; sourceTree = "<group>"; };
+		2C7455EF2A728D8400FDBE50 /* FileManager+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+extensions.swift"; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
 		2C76A3D42A71A95800A0C331 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+extensions.swift"; sourceTree = "<group>"; };
 		2CD84DAF2A7181750000121D /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateMacOS.swift; sourceTree = "<group>"; };
 		2CD84DB32A7188560000121D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -168,6 +191,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB5A22E2A72B40D008653D0 /* KamaalUtils in Frameworks */,
+				2C7455DB2A727A5F00FDBE50 /* KamaalUI in Frameworks */,
+				2C7455F22A728D9B00FDBE50 /* KamaalExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +302,16 @@
 			isa = PBXGroup;
 			children = (
 				2C7455D02A72767C00FDBE50 /* Playground.entitlements */,
+				2C7455D82A7279F700FDBE50 /* AppLogo.swift */,
 				2C7455C92A72767A00FDBE50 /* ContentView.swift */,
 				2C7455C72A72767A00FDBE50 /* PlaygroundApp.swift */,
+				2C7455DC2A727AB800FDBE50 /* Screens.swift */,
 				2C7455CB2A72767C00FDBE50 /* Assets.xcassets */,
+				2C7455EE2A728D7500FDBE50 /* Extensions */,
 				2C7455CD2A72767C00FDBE50 /* Preview Content */,
+				2C7455EB2A728D3E00FDBE50 /* Resources */,
+				2C7455F32A728DBD00FDBE50 /* Utilities */,
+				2C7455DE2A727AD600FDBE50 /* Views */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -290,6 +322,58 @@
 				2C7455CE2A72767C00FDBE50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C7455DE2A727AD600FDBE50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455DF2A727ADC00FDBE50 /* Screens */,
+				2C7455E22A727AFE00FDBE50 /* SupportingViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C7455DF2A727ADC00FDBE50 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455E02A727AE800FDBE50 /* AppLogoCreatorScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2C7455E22A727AFE00FDBE50 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455E72A728B9100FDBE50 /* AppLogoColorFormRow.swift */,
+				2C7455E92A728BA800FDBE50 /* AppLogoColorSelector.swift */,
+				2C7455E32A727B0B00FDBE50 /* PlaygroundNavigationButton.swift */,
+				2C7455E52A727B3900FDBE50 /* WideNavigationLink.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		2C7455EB2A728D3E00FDBE50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455EC2A728D4C00FDBE50 /* app-icon-generator */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C7455EE2A728D7500FDBE50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C7455EF2A728D8400FDBE50 /* FileManager+extensions.swift */,
+				2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C7455F32A728DBD00FDBE50 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		2C76A3CC2A71A00600A0C331 /* Frameworks */ = {
@@ -421,6 +505,11 @@
 			dependencies = (
 			);
 			name = Playground;
+			packageProductDependencies = (
+				2C7455DA2A727A5F00FDBE50 /* KamaalUI */,
+				2C7455F12A728D9B00FDBE50 /* KamaalExtensions */,
+				2CB5A22D2A72B40D008653D0 /* KamaalUtils */,
+			);
 			productName = Playground;
 			productReference = 2C7455C52A72767900FDBE50 /* Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -532,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7455CF2A72767C00FDBE50 /* Preview Assets.xcassets in Resources */,
+				2C7455ED2A728D4C00FDBE50 /* app-icon-generator in Resources */,
 				2C7455CC2A72767C00FDBE50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,8 +680,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7455EA2A728BA800FDBE50 /* AppLogoColorSelector.swift in Sources */,
 				2C7455CA2A72767A00FDBE50 /* ContentView.swift in Sources */,
+				2C7455E82A728B9100FDBE50 /* AppLogoColorFormRow.swift in Sources */,
+				2C7455E12A727AE800FDBE50 /* AppLogoCreatorScreen.swift in Sources */,
+				2C7455E42A727B0B00FDBE50 /* PlaygroundNavigationButton.swift in Sources */,
+				2CB5A2302A72B602008653D0 /* Shell+extensions.swift in Sources */,
 				2C7455C82A72767A00FDBE50 /* PlaygroundApp.swift in Sources */,
+				2C7455D92A7279F700FDBE50 /* AppLogo.swift in Sources */,
+				2C7455F02A728D8400FDBE50 /* FileManager+extensions.swift in Sources */,
+				2C7455E62A727B3900FDBE50 /* WideNavigationLink.swift in Sources */,
+				2C7455DD2A727AB800FDBE50 /* Screens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,8 +1262,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kamaalio/KamaalSwift.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.9.2;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		2CD84DB72A718A320000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */ = {
@@ -1188,6 +1287,16 @@
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
 			productName = KamaalExtensions;
 		};
+		2C7455DA2A727A5F00FDBE50 /* KamaalUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalUI;
+		};
+		2C7455F12A728D9B00FDBE50 /* KamaalExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalExtensions;
+		};
 		2C76A3CD2A71A00600A0C331 /* KamaalUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
@@ -1197,6 +1306,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
 			productName = KamaalUI;
+		};
+		2CB5A22D2A72B40D008653D0 /* KamaalUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD84DA42A7180C80000121D /* XCRemoteSwiftPackageReference "KamaalSwift" */;
+			productName = KamaalUtils;
 		};
 		2CD84DA72A7180C80000121D /* KamaalExtensions */ = {
 			isa = XCSwiftPackageProductDependency;

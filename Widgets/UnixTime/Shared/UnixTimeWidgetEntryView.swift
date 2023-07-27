@@ -16,7 +16,7 @@ struct UnixTimeWidgetEntryView: View {
         VStack(alignment: .leading) {
             Text("Epoch timestamp")
                 .font(.headline)
-            Text(String(entry.date.timeIntervalSince1970.int))
+            Text(entry.date.timeIntervalSince1970.int.string)
                 .padding(.top, 2)
             Spacer()
             Text("Last updated: \(formattedLastUpdatedDate)")

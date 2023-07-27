@@ -18,7 +18,7 @@ final class ClockManager: ObservableObject {
     }
 
     var formattedTime: String {
-        String(time.int)
+        time.int.string
     }
 
     private func startCounting() {
