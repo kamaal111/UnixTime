@@ -28,6 +28,8 @@
 		2C76A3CE2A71A00600A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CD2A71A00600A0C331 /* KamaalUI */; };
 		2C76A3D02A71A01500A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CF2A71A01500A0C331 /* KamaalUI */; };
 		2C76A3D32A71A8B100A0C331 /* NSView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */; };
+		2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
+		2CC7EFA22A7265A8008D1496 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2CD84DA82A7180C80000121D /* KamaalExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD84DA72A7180C80000121D /* KamaalExtensions */; };
 		2CD84DB02A7181750000121D /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DAF2A7181750000121D /* ClockManager.swift */; };
 		2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD84DB12A71841C0000121D /* AppDelegateMacOS.swift */; };
@@ -159,8 +161,7 @@
 				2C76A3CC2A71A00600A0C331 /* Frameworks */,
 				2C534B232A717CC8001568DA /* Products */,
 				2C534B242A717CC8001568DA /* UnixTime */,
-				2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */,
-				2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */,
+				2CC7EFA02A7264FA008D1496 /* Widgets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +239,15 @@
 				2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CC7EFA02A7264FA008D1496 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E8B462A71AD080098505A /* UnixTimeWidgetIOS */,
+				2C6E8B5C2A71AD200098505A /* UnixTimeWidgetMacOS */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		2CD84DCE2A718C040000121D /* Views */ = {
@@ -387,9 +397,9 @@
 			projectRoot = "";
 			targets = (
 				2C534B212A717CC8001568DA /* UnixTime (macOS) */,
+				2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */,
 				2CD84DB52A718A320000121D /* UnixTime (iOS) */,
 				2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */,
-				2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -410,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6E8B4C2A71AD080098505A /* Assets.xcassets in Resources */,
+				2CC7EFA12A7265A6008D1496 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6E8B602A71AD200098505A /* Assets.xcassets in Resources */,
+				2CC7EFA22A7265A8008D1496 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,7 +722,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTimeWidgetIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -739,7 +751,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UnixTimeWidgetIOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTimeWidgetIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetIOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -765,13 +777,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTimeWidgetMacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -795,13 +807,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTimeWidgetMacOS/UnixTimeWidgetMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UnixTimeWidgetMacOS/Info.plist;
+				INFOPLIST_FILE = Widgets/UnixTimeWidgetMacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UnixTimeWidgetMacOS;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (

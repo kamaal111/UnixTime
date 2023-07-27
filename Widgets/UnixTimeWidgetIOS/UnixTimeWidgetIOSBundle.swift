@@ -5,8 +5,8 @@
 //  Created by Kamaal M Farah on 26/07/2023.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 @main
 struct UnixTimeWidgetIOSBundle: WidgetBundle {
