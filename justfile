@@ -9,21 +9,36 @@ default:
   just --list
 
 archive-ios:
-    just archive "iphoneos" "$IOS_SCHEME" "platform=iOS" "$APP_NAME-iOS"
+    #!/bin/zsh
+
+    ARCHIVE_PATH="$APP_NAME-iOS.xcarchive"
+
+    just archive "iphoneos" "$IOS_SCHEME" "platform=iOS" "$ARCHIVE_PATH"
+    just export-archive "ExportOptions/IOS.plist" "$ARCHIVE_PATH"
 
 archive-mac:
-    just archive "macosx" "$MAC_SCHEME" "platform=macOS" "$APP_NAME-macOS"
+    #!/bin/zsh
+
+    ARCHIVE_PATH="$APP_NAME-macOS.xcarchive"
+
+    just archive "macosx" "$MAC_SCHEME" "platform=macOS" "$ARCHIVE_PATH"
+    just export-archive "ExportOptions/Mac.plist" "$ARCHIVE_PATH"
 
 bump-version number:
     go run Scripts/xcode-app-version-bumper/*go --number {{ number }}
 
 [private]
-archive sdk scheme destination name:
+archive sdk scheme destination archive-path:
     #!/bin/zsh
 
     CONFIGURATION="Release"
-    ARCHIVE_FILE="{{ name }}.xcarchive"
 
-    xcodebuild -scheme "{{ scheme }}" -project $PROJECT \
+    xcodebuild archive -scheme "{{ scheme }}" -project $PROJECT \
         -configuration $CONFIGURATION -destination "{{ destination }}" \
-        -sdk "{{ sdk }}" -archivePath $ARCHIVE_FILE archive
+        -sdk "{{ sdk }}" -archivePath "{{ archive-path }}"
+
+[private]
+export-archive export-options archive:
+    #!/bin/zsh
+
+    xcodebuild -exportArchive -archivePath "{{ archive }}" -exportPath . -exportOptionsPlist "{{ export-options }}"

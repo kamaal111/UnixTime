@@ -7,8 +7,8 @@
 */
 
 "Epoch timestamp" = "Epoch timestamp";
-"Quit UnixTime" = "Quit EpochTime";
+"Quit UnixTime" = "Quit EpochStamp";
 "Last updated: %@" = "Last updated: %@";
-"Epoch Time" = "Epoch Time";
+"Epoch Time" = "Epoch Stamp";
 "Displays the current unix time." = "Displays the current unix time.";
 "Desk clock logo" = "Desk clock logo";

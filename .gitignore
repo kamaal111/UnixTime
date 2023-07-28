@@ -60,5 +60,6 @@ Gemfile.lock
 Secrets
 *.xcarchive
 Packaging.log
-ExportOptions.plist
 DistributionSummary.plist
+EpochStamp.pkg
+ExportOptions.plist
