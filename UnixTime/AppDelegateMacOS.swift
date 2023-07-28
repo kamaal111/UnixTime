@@ -6,43 +6,43 @@
 //
 
 import SwiftUI
-import Combine
 
-final class AppDelegate: NSObject, NSApplicationDelegate {
+final class AppDelegate: NSObject {
     private var statusItem: NSStatusItem!
     private let clockManager = ClockManager()
-    private var timeChangeSubscription = Set<AnyCancellable>()
-    private let mainMenuItemSize = CGSize(width: 150, height: 82)
+    private let popoverSize = CGSize(width: 180, height: 120)
 
+    private lazy var popover: NSPopover = {
+        let popover = NSPopover()
+        popover.contentSize = NSSize(width: popoverSize.width, height: popoverSize.height)
+        popover.behavior = .transient
+        popover.contentViewController = NSHostingController(rootView: view())
+        popover.delegate = self
+        return popover
+    }()
+}
+
+extension AppDelegate: NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
+        setupStatusItem()
+        closeAllWindowsExceptForStatusBarWindow()
+    }
+}
+
+extension AppDelegate: NSPopoverDelegate {
+    func popoverDidClose(_ notification: Notification) {
+        clockManager.stopCounting()
+    }
+}
+
+extension AppDelegate {
+    private func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         statusItem.button!.image = NSImage(
             systemSymbolName: "deskclock.fill",
-            accessibilityDescription: "Desk clock logo")
-        statusItem.menu = menu
-
-        NSApplication.shared.windows
-            .filter({ window in window != statusItem.button!.window })
-            .forEach({ window in window.close() })
+            accessibilityDescription: NSLocalizedString("Desk clock logo", comment: ""))
+        statusItem.button!.action = #selector(togglePopover)
     }
-
-    private lazy var menu: NSMenu = {
-        let menu = NSMenu()
-        menu.addItem(mainMenuItem)
-        menu.addItem(.separator())
-        menu.addItem(
-            withTitle: NSLocalizedString("Quit UnixTime", comment: ""),
-            action: #selector(quitApp),
-            keyEquivalent: "Q")
-        return menu
-    }()
-
-    lazy var mainMenuItem: NSMenuItem = {
-        let item = NSMenuItem()
-        item.view = NSHostingView(rootView: view())
-            .setFrame(NSRect(x: 0, y: 0, width: mainMenuItemSize.width, height: mainMenuItemSize.height))
-        return item
-    }()
 
     private func view() -> some View {
         MenuPopoverClock()
@@ -50,7 +50,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc
-    private func quitApp(_ item: NSMenuItem) {
-        NSApplication.shared.terminate(self)
+    private func togglePopover(_ button: NSStatusBarButton) {
+        if popover.isShown {
+            clockManager.stopCounting()
+            popover.performClose(nil)
+        } else {
+            clockManager.startCounting()
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+        }
+    }
+
+    private func closeAllWindowsExceptForStatusBarWindow() {
+        let statusItemWindow = statusItem.button!.window
+        NSApplication.shared.windows
+            .forEach({ window in
+                guard window != statusItemWindow else { return }
+
+                window.close()
+            })
     }
 }

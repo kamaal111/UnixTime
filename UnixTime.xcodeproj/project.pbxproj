@@ -50,7 +50,6 @@
 		2C76A3C92A719F6700A0C331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C76A3CB2A719F6700A0C331 /* Localizable.strings */; };
 		2C76A3CE2A71A00600A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CD2A71A00600A0C331 /* KamaalUI */; };
 		2C76A3D02A71A01500A0C331 /* KamaalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C76A3CF2A71A01500A0C331 /* KamaalUI */; };
-		2C76A3D32A71A8B100A0C331 /* NSView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */; };
 		2CB5A22E2A72B40D008653D0 /* KamaalUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB5A22D2A72B40D008653D0 /* KamaalUtils */; };
 		2CB5A2302A72B602008653D0 /* Shell+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */; };
 		2CB5A2332A72BE01008653D0 /* VCR_OSD_MONO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB5A2322A72BE01008653D0 /* VCR_OSD_MONO.ttf */; };
@@ -150,7 +149,6 @@
 		2C7455EF2A728D8400FDBE50 /* FileManager+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+extensions.swift"; sourceTree = "<group>"; };
 		2C76A3C32A7199C400A0C331 /* MenuPopoverClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopoverClock.swift; sourceTree = "<group>"; };
 		2C76A3CA2A719F6700A0C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+extensions.swift"; sourceTree = "<group>"; };
 		2C76A3D42A71A95800A0C331 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CB5A22F2A72B602008653D0 /* Shell+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+extensions.swift"; sourceTree = "<group>"; };
 		2CB5A2322A72BE01008653D0 /* VCR_OSD_MONO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VCR_OSD_MONO.ttf; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 				2C534B272A717CC8001568DA /* ContentView.swift */,
 				2C534B252A717CC8001568DA /* UnixTimeApp.swift */,
 				2C534B292A717CC9001568DA /* Assets.xcassets */,
-				2C76A3D12A71A89E00A0C331 /* Extensions */,
 				2C76A3CB2A719F6700A0C331 /* Localizable.strings */,
 				2CD84DD02A718C1B0000121D /* Models */,
 				2C534B2C2A717CC9001568DA /* Preview Content */,
@@ -392,14 +389,6 @@
 				2C6E8B442A71AD080098505A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2C76A3D12A71A89E00A0C331 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2C76A3D22A71A8B100A0C331 /* NSView+extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2CB5A2312A72BDCF008653D0 /* Fonts */ = {
@@ -663,7 +652,6 @@
 			files = (
 				2CD84DB22A71841C0000121D /* AppDelegateMacOS.swift in Sources */,
 				2CD84DB42A7188560000121D /* ClockView.swift in Sources */,
-				2C76A3D32A71A8B100A0C331 /* NSView+extensions.swift in Sources */,
 				2C534B282A717CC8001568DA /* ContentView.swift in Sources */,
 				2CD84DB02A7181750000121D /* ClockManager.swift in Sources */,
 				2C534B262A717CC8001568DA /* UnixTimeApp.swift in Sources */,

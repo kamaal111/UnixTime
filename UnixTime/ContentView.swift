@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var clockManager: ClockManager
+
     var body: some View {
         ClockView()
+            .onAppear(perform: {
+                clockManager.startCounting()
+            })
     }
 }
 
