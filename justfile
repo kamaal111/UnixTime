@@ -1,6 +1,7 @@
 set export
+set dotenv-load
 
-APP_NAME := "EpochTime"
+APP_NAME := "EpochStamp"
 PROJECT := "UnixTime.xcodeproj"
 MAC_SCHEME := "UnixTime (macOS)"
 IOS_SCHEME := "UnixTime (iOS)"
@@ -24,6 +25,12 @@ archive-mac:
     just archive "macosx" "$MAC_SCHEME" "platform=macOS" "$ARCHIVE_PATH"
     just export-archive "ExportOptions/Mac.plist" "$ARCHIVE_PATH"
 
+archive-and-upload-ios: archive-ios
+    just upload-app ios $APP_NAME.ipa
+
+archive-and-upload-mac: archive-mac
+    just upload-app macos $APP_NAME.pkg
+
 bump-version number:
     go run Scripts/xcode-app-version-bumper/*go --number {{ number }}
 
@@ -39,6 +46,8 @@ archive sdk scheme destination archive-path:
 
 [private]
 export-archive export-options archive:
-    #!/bin/zsh
-
     xcodebuild -exportArchive -archivePath "{{ archive }}" -exportPath . -exportOptionsPlist "{{ export-options }}"
+
+[private]
+upload-app target binary-name:
+    xcrun altool --upload-app -t {{ target }} -f {{ binary-name }} -u kamaal.f1@gmail.com -p $APP_STORE_CONNECT_PASSWORD
