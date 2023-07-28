@@ -23,10 +23,12 @@ struct MenuPopoverClock: View {
                     Spacer()
                     Divider()
                     Button(action: { onQuit() }) {
-                        HStack {
+                        HStack(spacing: 0) {
                             Text("Quit UnixTime")
                             Spacer()
-                            Text("􀆔Q")
+                            Image(systemName: "command")
+                                .kBold()
+                            Text("Q")
                                 .bold()
                         }
                         .kInvisibleFill()
