@@ -34,6 +34,16 @@ archive-and-upload-mac: archive-mac
 bump-version number:
     go run Scripts/xcode-app-version-bumper/*go --number {{ number }}
 
+resize-mac-screenshots:
+    #!/bin/zsh
+
+    cd Scripts/resize-image
+    for screenshot in ../../Screenshots/Mac/**/*(.)
+    do
+        echo "Resizing $screenshot:t"
+        go run . -i $screenshot -o ../../Screenshots/Mac -s 2880x1800
+    done
+
 [private]
 archive sdk scheme destination archive-path:
     #!/bin/zsh
