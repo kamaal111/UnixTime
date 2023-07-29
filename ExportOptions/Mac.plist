@@ -14,8 +14,8 @@
 	<dict>
 		<key>io.kamaal.UnixTime</key>
 		<string>Epoch Time macOS Distribution</string>
-		<key>io.kamaal.UnixTime.UnixTimeWidget</key>
-		<string>Epoch time Mac widget</string>
+		<!-- <key>io.kamaal.UnixTime.UnixTimeWidget</key>
+		<string>Epoch time Mac widget</string> -->
 	</dict>
 	<key>signingCertificate</key>
 	<string>98AF02F047C1ACBDAA841A1C5A1FCA6AE4D1CA86</string>

@@ -19,7 +19,6 @@
 		2C6E8B5A2A71AD200098505A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B422A71AD080098505A /* WidgetKit.framework */; };
 		2C6E8B5B2A71AD200098505A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E8B442A71AD080098505A /* SwiftUI.framework */; };
 		2C6E8B5E2A71AD200098505A /* UnixTimeWidgetMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E8B5D2A71AD200098505A /* UnixTimeWidgetMacOS.swift */; };
-		2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2C6E8B592A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C7455B52A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
 		2C7455B62A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B42A726EEE00FDBE50 /* UnixTimeWidgetEntryView.swift */; };
 		2C7455B82A726FA800FDBE50 /* UnixTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7455B72A726FA800FDBE50 /* UnixTimeEntry.swift */; };
@@ -76,13 +75,6 @@
 			remoteGlobalIDString = 2C6E8B402A71AD080098505A;
 			remoteInfo = UnixTimeWidgetIOSExtension;
 		};
-		2C6E8B632A71AD200098505A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C534B1A2A717CC8001568DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C6E8B582A71AD200098505A;
-			remoteInfo = UnixTimeWidgetMacOSExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,7 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2C6E8B652A71AD200098505A /* UnixTimeWidgetMacOSExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +438,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2C6E8B642A71AD200098505A /* PBXTargetDependency */,
 			);
 			name = "UnixTime (macOS)";
 			packageProductDependencies = (
@@ -719,11 +709,6 @@
 			target = 2C6E8B402A71AD080098505A /* UnixTimeWidgetIOSExtension */;
 			targetProxy = 2C6E8B4E2A71AD080098505A /* PBXContainerItemProxy */;
 		};
-		2C6E8B642A71AD200098505A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C6E8B582A71AD200098505A /* UnixTimeWidgetMacOSExtension */;
-			targetProxy = 2C6E8B632A71AD200098505A /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -865,7 +850,7 @@
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -913,7 +898,7 @@
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeMacOS.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -958,7 +943,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/UnixTime/iOS/Info.plist;
@@ -988,7 +973,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DXUKH9VF73;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1022,7 +1007,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTime/macOS/UnixTimeWidgetMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DXUKH9VF73;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1054,7 +1039,7 @@
 				CODE_SIGN_ENTITLEMENTS = Widgets/UnixTime/macOS/UnixTimeWidgetMacOS.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = DXUKH9VF73;
@@ -1090,7 +1075,7 @@
 				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = DXUKH9VF73;
@@ -1126,7 +1111,7 @@
 				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = DXUKH9VF73;
@@ -1160,7 +1145,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UnixTime/UnixTimeIOS.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -1209,7 +1194,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UnixTime/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
