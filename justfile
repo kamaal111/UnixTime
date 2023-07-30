@@ -61,7 +61,12 @@ archive sdk scheme destination archive-path:
 
 [private]
 export-archive export-options archive:
-    xcodebuild -exportArchive -archivePath "{{ archive }}" -exportPath . -exportOptionsPlist "{{ export-options }}"
+    #!/bin/zsh
+
+    . Scripts/XcTools/.venv/bin/activate
+    pip install -e Scripts/XcTools
+    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" export-archive \
+        --archive-path "{{ archive }}" --export-options "{{ export-options }}"
 
 [private]
 upload-app target binary-name:
