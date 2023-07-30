@@ -65,4 +65,8 @@ export-archive export-options archive:
 
 [private]
 upload-app target binary-name:
-    xcrun altool --upload-app -t {{ target }} -f {{ binary-name }} -u kamaal.f1@gmail.com -p $APP_STORE_CONNECT_PASSWORD
+    . Scripts/XcTools/.venv/bin/activate
+    pip install -e Scripts/XcTools
+    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" upload \
+        --file {{ binary-name }} --target {{ target }} --username kamaal.f1@gmail.com \
+        --password $APP_STORE_CONNECT_PASSWORD
