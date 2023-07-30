@@ -1,7 +1,3 @@
-[submodule "xcode-app-version-bumper"]
-	path = Scripts/xcode-app-version-bumper
-	url = https://github.com/kamaal111/xcode-app-version-bumper.git
-	branch = main
 [submodule "XcTools"]
 	path = Scripts/XcTools
 	url = https://github.com/kamaal111/XcTools.git

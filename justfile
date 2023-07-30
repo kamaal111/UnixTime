@@ -32,7 +32,10 @@ archive-and-upload-mac: archive-mac
     just upload-app macos $APP_NAME.pkg
 
 bump-version number:
-    go run Scripts/xcode-app-version-bumper/*go --number {{ number }}
+    . Scripts/XcTools/.venv/bin/activate
+    pip install -e Scripts/XcTools
+    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" bump-version \
+        --build-number {{number}}
 
 resize-mac-screenshots:
     #!/bin/zsh
