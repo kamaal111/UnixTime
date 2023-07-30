@@ -53,9 +53,11 @@ archive sdk scheme destination archive-path:
 
     CONFIGURATION="Release"
 
-    xcodebuild archive -scheme "{{ scheme }}" -project $PROJECT \
-        -configuration $CONFIGURATION -destination "{{ destination }}" \
-        -sdk "{{ sdk }}" -archivePath "{{ archive-path }}"
+    . Scripts/XcTools/.venv/bin/activate
+    pip install -e Scripts/XcTools
+    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" archive \
+        --configuration $CONFIGURATION --scheme "{{ scheme }}" --destination "{{ destination }}" \
+        --sdk {{ sdk }} --archive-path "{{ archive-path }}" --project $PROJECT
 
 [private]
 export-archive export-options archive:
