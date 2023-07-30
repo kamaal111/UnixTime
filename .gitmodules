@@ -1,4 +1,0 @@
-[submodule "XcTools"]
-	path = Scripts/XcTools
-	url = https://github.com/kamaal111/XcTools.git
-	branch = main

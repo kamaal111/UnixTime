@@ -32,10 +32,7 @@ archive-and-upload-mac: archive-mac
     just upload-app macos $APP_NAME.pkg
 
 bump-version number:
-    . Scripts/XcTools/.venv/bin/activate
-    pip install -e Scripts/XcTools
-    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" bump-version \
-        --build-number {{number}}
+    xctools bump-version --build-number {{number}}
 
 resize-mac-screenshots:
     #!/bin/zsh
@@ -53,25 +50,17 @@ archive sdk scheme destination archive-path:
 
     CONFIGURATION="Release"
 
-    . Scripts/XcTools/.venv/bin/activate
-    pip install -e Scripts/XcTools
-    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" archive \
-        --configuration $CONFIGURATION --scheme "{{ scheme }}" --destination "{{ destination }}" \
-        --sdk {{ sdk }} --archive-path "{{ archive-path }}" --project $PROJECT
+    xctools archive --configuration $CONFIGURATION --scheme "{{ scheme }}" \
+        --destination "{{ destination }}" --sdk {{ sdk }} --archive-path "{{ archive-path }}" \
+        --project $PROJECT
 
 [private]
 export-archive export-options archive:
     #!/bin/zsh
 
-    . Scripts/XcTools/.venv/bin/activate
-    pip install -e Scripts/XcTools
-    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" export-archive \
-        --archive-path "{{ archive }}" --export-options "{{ export-options }}"
+    xctools export-archive --archive-path "{{ archive }}" --export-options "{{ export-options }}"
 
 [private]
 upload-app target binary-name:
-    . Scripts/XcTools/.venv/bin/activate
-    pip install -e Scripts/XcTools
-    python3 -c "from Scripts.XcTools.src.xctools_kamaalio.cli import cli; cli()" upload \
-        --file {{ binary-name }} --target {{ target }} --username kamaal.f1@gmail.com \
+    xctools upload --file {{ binary-name }} --target {{ target }} --username kamaal.f1@gmail.com \
         --password $APP_STORE_CONNECT_PASSWORD
